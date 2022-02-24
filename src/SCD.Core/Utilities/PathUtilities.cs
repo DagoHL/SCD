@@ -34,7 +34,7 @@ public static class PathUtilities
     public static string NormalizePath(string path)
     {
         // Get a string of the invalid characters.
-        string invalidChars = new string(Path.GetInvalidPathChars());
+        string invalidChars = new string(Path.GetInvalidFileNameChars());
 
         // Iterate over the invalid characters, replacing them one at a time with an empty string.
         foreach(char invalidChar in invalidChars)
